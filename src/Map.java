@@ -24,4 +24,12 @@ public class Map {
         this.nameTerrain = nameTerrain;
         this.nameOperations = nameOperations;
     }
+
+    @Override
+    public String toString() {
+        return "Map{" +
+                "nameTerrain='" + nameTerrain + '\'' +
+                ", nameOperations='" + nameOperations + '\'' +
+                '}';
+    }
 }

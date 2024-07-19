@@ -5,12 +5,12 @@ public class Main {
         Map map = new Map("Пустыня", "Оборона военнозначимой местности");
         Backpack backpack = new Backpack("Зеленый", 5);
 
-        Soldier soldier1 = new Soldier("Max", "Soldier", 22, weapon, backpack);
-        Soldier soldier2 = new Soldier("Max", "Soldier", 22, weapon, backpack);
-        Soldier soldier3 = new Soldier("Max", "Soldier", 22, weapon, backpack);
-        Soldier soldier4 = new Soldier("Max", "Soldier", 22, weapon, backpack);
+        Soldier soldier1 = new Soldier("Max", "Soldier", 22, backpack,  new Weapon("Зеленый", 5) );
+        Soldier soldier2 = new Soldier("Max", "Soldier", 22, backpack,  new Weapon("Зеленый", 5) );
+        Soldier soldier3 = new Soldier("Max", "Soldier", 22, backpack,  new Weapon("Зеленый", 5) );
+        Soldier soldier4 = new Soldier("Max", "Soldier", 22, backpack,  new Weapon("Зеленый", 5) );
 
-        Officers officers = new Officers("Max", "Soldier", 22, map, backpack);
+        Officers officers = new Officers("Max", "Soldier", 22, backpack, map );
 
         Squad squad = new Squad();
         squad.add(soldier1);

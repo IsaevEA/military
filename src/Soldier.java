@@ -1,19 +1,16 @@
 public class Soldier extends AbstractMilitary implements Fire{
 
     private Weapon weapon;
-    private Backpack backpack;
 
     @Override
     public String toString() {
         return "Soldier{" +
                 "weapon=" + weapon +
-                ", backpack=" + backpack +
                 '}';
     }
 
-    public Soldier(String name, String rank, int age, Weapon weapon, Backpack backpack) {
-        super(name,rank,age);
-        this.backpack = backpack;
+    public Soldier(String name, String rank, int age, Backpack backpack, Weapon weapon) {
+        super(name,rank,age, backpack);
         this.weapon = weapon;
     }
 
